@@ -1,28 +1,28 @@
-<?php /**
- *  index.php est le model par défaut deu thème 4w4
- * ne pas oublier les ; a la fin
- *  */ ?>
-
+<?php
+/**
+ * Modèle par défaut
+ * 
+ */
+?>
 <?php get_header(); ?>
-
 <main>
-    <pre>front-page.php</pre>
-    <h1>Bienvenue sur 4w4!</h1>
+    <h3>front-page.php</h3>
+    <section class="blocflex">
     <?php
-        if(have_posts()):
-            while(have_posts()):
-                the_post(); // extrait un objet "post"?>
-                <article>
-                    <h3> <?php get_the_title(); //affiche le titre du post ?> </h3>
-        
-                    <h6>Extrait:<h6><?php the_excerpt();?>
-                    <h6>Le Contenu:</h6><?php the_content();?>
-                </article>
-           <?php endwhile; ?> 
-        <?php  endif;?>
-    
-
+        if (have_posts()): 
+            while (have_posts()) : the_post(); ?>
+            <article>
+                <h2>
+                    <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
+                </h2>
+                <?php // the_content();  // affiche le contenu complet de l'article ?>
+                <?php // the_excerpt();   // affiche un résumé de l'article ?>
+                <p><?= wp_trim_words(get_the_excerpt(), 10, "&#10148;") ?></p>
+            </article>   
+            <?php endwhile;
+        endif;    
+    ?>
+    </section>
 </main>
-    <?php get_footer(); ?>
-</body>
-</html>
+
+<?php get_footer(); ?>

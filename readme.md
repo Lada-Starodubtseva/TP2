@@ -1,16 +1,14 @@
-# laboratoire 1
-## 4w4-conception d'interface et développement web
-### auteur : benoit
-#### obejectifs
-- installer Wordpress localement
-- réaliser une première version d'un thème
-- résumer de git
+# Exercice #1
+## 4w4 - Conception d'interface et développement Web
+### Auteur: Lada Starodubtseva
+#### Description
+- Installation sur un serveur distant « siteground.com »
+- Développer les modules suivants:
+> header.php, front-page.php
+- Création de la branche exer1 
+- Compléter la codification sass
+- Améliorer le design global
 
-#### liens de référence
-- site du prof sur siteground
-- https://eddytuto.sg-host.com/
-- https://github.com/eddytuto
-- https://fr.worpress.org/
-- pour visualiser sur VC installer << Markdown preview>>
-- pour activer `control-shift-V`
-- https://developer.wordpress.org/themes/basics/
+#### Références
+- https://eddytuto.ca/
+- https://developer.wordpress.org/themes/

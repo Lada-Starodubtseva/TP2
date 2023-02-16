@@ -1,0 +1,42 @@
+/* Les balise qu'on utilse dans la conversion des fichiers markdown */
+
+/* Liste */
+ul,ol{
+    margin: 1rem, 0rem;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+ul > li,
+ol > li{
+    margin: 0.5rem 0rem
+}
+
+ul>li {}
+
+ol>li{}
+
+/* ----------------------------  pre */
+
+pre {
+    background-color: red;
+    color: white;
+    overflow-x: scroll;
+}
+
+code {}
+
+i{}
+
+blockquote {}
+
+hr {}
+
+strong {}
+
+
+
+
+
