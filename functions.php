@@ -1,4 +1,7 @@
 <?php
+    
+
+
 
 function ajouter_styles() {
 
@@ -29,3 +32,27 @@ add_theme_support( 'custom-logo',
                         'width'  => 150,
 ) );
 add_theme_support( 'post-thumbnails' );
+
+
+
+/**
+ * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
+ * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
+ * Dépendant de la condition initiale on peut filtrer un type particulier de requête
+ * Dans ce cas çi nous filtrons la requête de la page d'accueil
+ * @param WP_query  $query la requête principal de WP
+ */
+function cidweb_modifie_requete_principal( $query ) {
+    if (    $query->is_home() //Vérifie si page accueil
+            && $query->is_main_query() //si requête principale
+            && ! is_admin() ) { //si pas dans le tableau de bord
+        // $query->set permet de madifier la requête principale
+      $query->set( 'category_name', 'note4w4' ); //filtre les articles de catégories note4W4 (slug)
+      $query->set( 'orderby', 'title' ); //permet de trier selon le champ title
+      $query->set( 'order', 'ASC' ); //trier en ordre ascendant
+      }
+     }
+     add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+
+     
+ ?>

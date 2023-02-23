@@ -22,5 +22,13 @@ font-size: clamp(1rem, 0.3rem + 2.45vw, 4.37rem);
             }
         
         }
+        
+        .menu-item::before{
+        content: "-";
+        background: rgb(45, 199, 210);
+        border-radius: .5rem;
+        padding-inline: .3rem;
+        margin-inline-end: .3rem;
+        }
     }
 }

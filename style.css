@@ -30,6 +30,7 @@ html {
  */
 body {
   margin: 0;
+  background-color: black;
 }
 
 /**
@@ -333,6 +334,9 @@ h1 {
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  color: red;
+  justify-content: center;
+  display: flex;
 }
 
 h3 {
@@ -356,6 +360,8 @@ P {
 }
 
 h1 {
+    justify-content: center;
+  display: flex;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -375,7 +381,8 @@ p {
   /*
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;*/
-  font-family: "Times New Roman", Times, serif;
+    font-family: cursive;
+    color: red;
 }
 
 a {
@@ -427,6 +434,8 @@ a:hover {
 }
 .blocflex article {
   flex: 1 0 200px;
-  border: 1px solid #aaa;
+  border: 1px dashed #aaa;
   padding: 10px;
+  margin: 1rem;
+
 }
