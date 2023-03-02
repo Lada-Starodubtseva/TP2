@@ -11,24 +11,23 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 2023-4w4
 */
 
+
 @import "variables/dimension";
-
-
-
 @import "normalize/normalize";
 // @import "normalize/box-sizing";
 
-@import "variables/root";
-
 /* --------------------------------------------- base */
 @import "base/heading";
+@import "base/markdown";
 // @import "base/espacement";
-@import "base/link";
+// @import "base/lien";
 // @import "base/list";
- @import "base/markdown";
 
 /* --------------------------------------------- composant */
-@import "composant/pied_page";
-@import "composant/site_entete";
-@import "composant/blockflex";
 @import "composant/entete";
+@import "composant/blockflex";
+@import "composant/recherche";
+@import "composant/pied_page";
+@import "composant/_site_entete";
+/* --------------------------------------------- layout */
+@import "layout/aside-contenu";

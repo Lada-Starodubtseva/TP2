@@ -1,7 +1,7 @@
 <footer class="site__footer">
-    <section>Colonne 1</section>
-    <section>Colonne 2</section>
-    <section>Colonne 3</section>
+    <section class="lien">Colonne 1</section>
+    <section class="lien">Colonne 2</section>
+    <section class="lien">Colonne 3</section>
 </footer>
 <?php wp_footer(); ?>
 </body>

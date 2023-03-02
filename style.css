@@ -1,9 +1,10 @@
 @charset "UTF-8";
+
 /*
 Theme Name: 2023 4w4 ada Starodubtseva
-Theme URI:https://github.com/Lada-Starodubtseva/4w4
+Theme URI: https://referenced.ca
 Author: Lada starodubtseva
-Author URI: https://github.com/Lada-Starodubtseva
+Author URI: https://github.com/eddytuto
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
@@ -19,8 +20,10 @@ Text Domain: 2023-4w4
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /* Sections
@@ -30,7 +33,7 @@ html {
  */
 body {
   margin: 0;
-  background-color: black;
+  background-color: #9db990;
 }
 
 /**
@@ -38,6 +41,7 @@ body {
  */
 main {
   display: block;
+  margin: 2em;
 }
 
 /**
@@ -56,9 +60,12 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
@@ -66,8 +73,10 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
@@ -77,6 +86,7 @@ pre {
  */
 a {
   background-color: transparent;
+  color: #ffffff;
 }
 
 /**
@@ -84,9 +94,12 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
@@ -104,8 +117,10 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -155,10 +170,14 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -166,7 +185,8 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -175,7 +195,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -224,12 +245,18 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
@@ -252,8 +279,10 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -269,8 +298,10 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -285,8 +316,10 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
@@ -328,19 +361,17 @@ css font-size clamp generator *
 https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
 
 */
-h1 {
+/* h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
-}
+} */
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
-  color: red;
-  justify-content: center;
-  display: flex;
 }
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  color: aliceblue;
 }
 
 h4 {
@@ -360,14 +391,15 @@ P {
 }
 
 h1 {
-    justify-content: center;
-  display: flex;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: red;
 }
 
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   /* font-family: "Slackey", cursive; */
+  color: #ffffff;
+  text-align: center;
 }
 
 h3,
@@ -381,21 +413,114 @@ p {
   /*
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;*/
-    font-family: cursive;
-    color: red;
+  font-family: "Times New Roman", Times, serif;
 }
 
-a {
-  color: rgb(76, 88, 135);
+ul,
+ol {
+  margin: 0rem 0rem;
+  padding: 7px;
+  color: #368ad4;
+  list-style-type: none;
 }
-a:visited {
-  color: rgb(76, 135, 104);
+
+@media screen and (min-width: 400px) {
+
+  ul,
+  ol {
+    margin: 1rem 0.5rem;
+    padding: 0 13px;
+  }
 }
-a:hover {
-  color: rgb(211, 28, 28);
+
+@media screen and (min-width: 700px) {
+
+  ul,
+  ol {
+    margin: 1rem 0.5rem;
+    padding: 0 15px;
+  }
+}
+
+ul li,
+ol li {
+  margin: 0.5rem 0rem;
+}
+
+/* ul li::before {
+  content: "-";
+  background: rgb(48, 222, 184);
+  border-radius: 0.5rem;
+  padding-inline: 0.3rem;
+  margin-inline-end: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+} */
+
+ul li li::before {
+  background: transparent;
+}
+
+/*
+li > ol {}
+li > ul {}
+*/
+pre {
+  background-color: #555;
+  color: #eee;
+  overflow-x: scroll;
 }
 
 /* --------------------------------------------- composant */
+.site__titre {
+  text-decoration: none;
+  text-align: center;
+}
+
+.site__titre h1 {
+  font-size: clamp(1rem, 0.3rem + 2.45vw, 4.37rem);
+}
+
+.menu__entete .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.menu__entete .menu li {
+  color: brown;
+  margin: 1em;
+}
+
+
+.menu__entete .menu .menu-item a {
+  padding: 1em;
+  font-family: cursive;
+  color: white;
+  font-size: 16px;
+}
+
+/* .menu__entete .menu .menu-item::before {
+  content: "-";
+  background: rgb(45, 199, 210);
+  border-radius: 0.5rem;
+  padding-inline: 0.3rem;
+  margin-inline-end: 0.3rem;
+} */
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blocflex article {
+  flex: 1 0 200px;
+  border: 1px solid #1d742e;
+  padding: 10px;
+  background-color: #ffedd0;
+}
+
 .site__footer {
   display: flex;
   justify-content: space-between;
@@ -419,23 +544,88 @@ a:hover {
   list-style-type: none;
   justify-content: flex-end;
 }
+
 .menu-entete-container .menu .menu-item {
   color: rgb(0, 42, 85);
 }
+
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
 }
 
-.blocflex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* --------------------------------------------- layout */
+/**
+mise en page générale avec display:grid
+*/
+.site__entete {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 1vw, 20rem);
+  background-image: linear-gradient(#224B0C, #9db990);;
 }
-.blocflex article {
-  flex: 1 0 200px;
-  border: 1px dashed #aaa;
-  padding: 10px;
-  margin: 1rem;
 
+.site__main {
+  grid-area: main;
+  background-color: rgb(255, 211, 255);
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: rgb(55, 101, 45);
+  color: white;
+}
+
+.site__aside {
+  --borderWidth: 10px;
+  grid-area: aside;
+  text-align: center;
+  position: relative;
+  border-radius: var(--borderWidth);
+  margin: 3vw;
+  background-color: #42831a53;
+}
+
+.site__aside:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #28544B, #ACBD86, #FFD6A0, #758f57, #446A46, #5d8060, #baa985, #FAAB78);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 25s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.site__aside .menu .menu-item a {
+  color: rgb(255, 255, 255);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header""aside""main""footer";
+}
+
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header""aside main"". main""footer footer";
+  }
 }
