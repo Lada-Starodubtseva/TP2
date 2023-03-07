@@ -1,12 +1,15 @@
-.blocflex {
-    display : flex;
+.blockflex {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    article {
-        flex: 1 0 200px;
-        border : 1px solid #aaa;
-        padding : 10px;
-    }
 }
 
+.blockflex .blockflex__article {
+    flex: 1 0 200px;
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+.blockflex__galerie {
+    flex: 1 0 100%;
+}

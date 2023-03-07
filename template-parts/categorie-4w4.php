@@ -18,7 +18,7 @@ $titre = ltrim($titre, '0');
 }
 ?>
 
-<article>
+<article class="blockflex__article">
   <h5><a href="<?php the_permalink(); ?>"><?php $sigle?></a></h5>
   <h6><?= $titre;?></h6>
  </h6> <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>

@@ -33,7 +33,7 @@ html {
  */
 body {
   margin: 0;
-  background-color: #9db990;
+  background-color: rgb(152, 172, 129);
 }
 
 /**
@@ -41,7 +41,6 @@ body {
  */
 main {
   display: block;
-  margin: 2em;
 }
 
 /**
@@ -86,7 +85,8 @@ pre {
  */
 a {
   background-color: transparent;
-  color: #ffffff;
+  text-align: center;
+  color: white;
 }
 
 /**
@@ -157,6 +157,7 @@ sup {
  */
 img {
   border-style: none;
+  margin: 1em;
 }
 
 /* Forms
@@ -361,9 +362,9 @@ css font-size clamp generator *
 https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
 
 */
-/* h1 {
+h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
-} */
+}
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
@@ -371,7 +372,6 @@ h2 {
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
-  color: aliceblue;
 }
 
 h4 {
@@ -392,14 +392,14 @@ P {
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: red;
+  text-align: center;
+
 }
 
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  /* font-family: "Slackey", cursive; */
-  color: #ffffff;
+  font-family: "Slackey", cursive;
   text-align: center;
+  color: #d8dd9d;
 }
 
 h3,
@@ -414,13 +414,14 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;*/
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 ul,
 ol {
   margin: 0rem 0rem;
   padding: 7px;
-  color: #368ad4;
+  color: #a0d49b;
   list-style-type: none;
 }
 
@@ -474,7 +475,6 @@ pre {
 /* --------------------------------------------- composant */
 .site__titre {
   text-decoration: none;
-  text-align: center;
 }
 
 .site__titre h1 {
@@ -487,22 +487,14 @@ pre {
   justify-content: flex-end;
 }
 
-.menu__entete .menu li {
-  color: brown;
-  margin: 1em;
-}
-
-
 .menu__entete .menu .menu-item a {
-  padding: 1em;
+  padding: 2em;
   font-family: cursive;
-  color: white;
-  font-size: 16px;
 }
 
 /* .menu__entete .menu .menu-item::before {
   content: "-";
-  background: rgb(45, 199, 210);
+  background: rgb(151, 196, 141);
   border-radius: 0.5rem;
   padding-inline: 0.3rem;
   margin-inline-end: 0.3rem;
@@ -514,11 +506,32 @@ pre {
   flex-wrap: wrap;
 }
 
-.blocflex article {
-  flex: 1 0 200px;
-  border: 1px solid #1d742e;
-  padding: 10px;
-  background-color: #ffedd0;
+.blockflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.blockflex .blockflex__article {
+  width: 20vw;
+  border: #0b4f0b dashed 3px;
+  padding: 1em;
+  background-color: #e9e0c354;
+  margin-bottom: 1em;
+}
+
+.blockflex__article {
+  width: 20vw;
+  border: #0b4f0b dashed 3px;
+  padding: 1em;
+  background-color: #e9e0c354;
+  margin-bottom: 1em;
+
+}
+
+.blockflex__galerie {
+  flex: 1 0 100%;
 }
 
 .site__footer {
@@ -546,7 +559,7 @@ pre {
 }
 
 .menu-entete-container .menu .menu-item {
-  color: rgb(0, 42, 85);
+  color: rgb(128, 185, 146);
 }
 
 .menu-entete-container .menu .menu-item a {
@@ -561,61 +574,40 @@ mise en page générale avec display:grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 1vw, 20rem);
-  background-image: linear-gradient(#224B0C, #9db990);;
+  background-image: linear-gradient(#13480b, rgb(152, 172, 129));
 }
 
 .site__main {
   grid-area: main;
-  background-color: rgb(255, 211, 255);
+  background-color: rgb(152, 172, 129);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: rgb(55, 101, 45);
-  color: white;
+  background-color: rgb(168, 204, 144);
 }
 
 .site__aside {
-  --borderWidth: 10px;
   grid-area: aside;
+  animation: animateBg 10s linear infinite;
+  background-image: linear-gradient(50deg, #bfc38d, #c19b4a, #8fa16e, #73a691, #64b3d9, #ae8977, #bfc38d);
+  background-size: 100% 1100%;
+  border-radius: 15px;
+  margin: 2em;
   text-align: center;
-  position: relative;
-  border-radius: var(--borderWidth);
-  margin: 3vw;
-  background-color: #42831a53;
+
 }
 
-.site__aside:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #28544B, #ACBD86, #FFD6A0, #758f57, #446A46, #5d8060, #baa985, #FAAB78);
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 25s ease alternate infinite;
-  background-size: 300% 300%;
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
-
-@keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.site__aside .menu .menu-item a {
-  color: rgb(255, 255, 255);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .site {
   display: grid;
@@ -627,5 +619,16 @@ mise en page générale avec display:grid
   .site {
     grid-template-columns: 20% auto;
     grid-template-areas: "header header""aside main"". main""footer footer";
+  }
+}
+
+.no-aside {
+  grid-template-areas: "header""main""footer";
+}
+
+@media screen and (min-width: 1000px) {
+  .no-aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header""main""footer";
   }
 }

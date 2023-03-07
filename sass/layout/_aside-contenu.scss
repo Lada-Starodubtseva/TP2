@@ -3,40 +3,54 @@ mise en page générale avec display:grid
 */
 
 .site__entete{
-    grid-area: header;
-    padding: 1rem clamp( 1rem, 1vw, 20rem);
-    }
-    
-    .site__main{
-     grid-area: main;
-     background-color:rgb(211, 241, 255) ;
-    }
-    
-    .site__footer{
-        grid-area: footer;
-        background-color: rgb(255, 186, 186);
-    }
-    
-    .site__aside{
-    grid-area: aside;
-    background-color: rgb(200, 255, 188);
-    }
-    
-    .site {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-areas:
-          "header"
-          "aside"
-          "main"
-          "footer";
-        //row-gap: 50px;
-        @media screen and (min-width: 1000px) {
-            grid-template-columns: 20% auto;
-            grid-template-areas:
-              "header header"
-              "aside main"
-              ". main"
-              "footer footer";
-        }
+  grid-area: header;
+  padding: 1rem clamp( 1rem, 1vw, 20rem);
+  }
+  
+  .site__main{
+   grid-area: main;
+   background-color:rgb(152, 172, 129) ;
+  }
+  
+  .site__footer{
+      grid-area: footer;
+      background-color: rgb(168, 204, 144);
+  }
+  
+  .site__aside{
+  grid-area: aside;
+  background-color: rgb(77, 174, 88);
+  }
+  
+  .site {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+      //row-gap: 50px;
+      @media screen and (min-width: 1000px) {
+          grid-template-columns: 20% auto;
+          grid-template-areas:
+            "header header"
+            "aside main"
+            ". main"
+            "footer footer";
       }
+    }
+  
+    .no-aside{
+      grid-template-areas:
+      "header"
+      "main"
+      "footer";
+      @media screen and (min-width: 1000px){
+        grid-template-columns: auto;
+          grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      }
+    }
