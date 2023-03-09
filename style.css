@@ -580,6 +580,30 @@ pre {
   align-items: center;
 }
 
+
+.recherche{
+  margin: 1.5rem;
+}
+
+.menu__recherche{
+  display: flex;
+}
+ @media screen and ( max-width: 1300px) {
+  .menu__recherche{
+    display:flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  }
+ @media screen and ( max-width: 1000px) {
+  .menu__entete .menu{
+    display: block;
+  }
+
+  #menu-footer2.menu{
+    display: block;
+  }
+  }
 /* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
