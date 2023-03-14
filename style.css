@@ -191,10 +191,54 @@ input {
   overflow: visible;
 }
 
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
+
+
+.menu__recherche label#burger {
+  display: none;
+
+}
+
+div.search-burger {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width:1300px) {
+
+    .menu__recherche label#burger {
+      display: block;
+
+    }
+    .menu__recherche {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .menu__entete{
+      transform: translateY(-26vh);
+    }
+
+}
+
+
+
+
+
+input#chkBurger:checked~nav.menu__entete {
+  transform: translateY(0.5vh);
+  transition: 0.5s;
+}
+input#chkBurger:not(:checked)~nav.menu__entete {
+
+  transition: 0.5s;
+}
+
+
+
+input#chkBurger {
+  display: none;
+}
+
 button,
 select {
   /* 1 */
@@ -393,7 +437,6 @@ P {
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
-
 }
 
 h2 {
@@ -448,15 +491,6 @@ ol li {
   margin: 0.5rem 0rem;
 }
 
-/* ul li::before {
-  content: "-";
-  background: rgb(48, 222, 184);
-  border-radius: 0.5rem;
-  padding-inline: 0.3rem;
-  margin-inline-end: 0.3rem;
-  width: 1rem;
-  height: 1rem;
-} */
 
 ul li li::before {
   background: transparent;
@@ -473,7 +507,12 @@ pre {
 }
 
 /* --------------------------------------------- composant */
+
+
 .site__titre {
+  /* font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+}
+.site__titre a { */
   text-decoration: none;
 }
 
@@ -481,31 +520,38 @@ pre {
   font-size: clamp(1rem, 0.3rem + 2.45vw, 4.37rem);
 }
 
+/* ///////////////////////////////// menu__entete */
+
+.menu__entete {
+  list-style-type: none;
+  z-index: 1;
+  justify-content: center;
+  background-color: #6abd674d;
+  border-radius: 15px;
+
+}
+
 .menu__entete .menu {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
+
 }
+
+/* @media screen and (min-width: 500px) {
+  .menu__entete .menu {
+    position: static;
+    top: auto;
+    right: auto;
+    flex-direction: row;
+    transform: translateX(0);
+  }
+} */
 
 .menu__entete .menu .menu-item a {
   padding: 2em;
   font-family: cursive;
 }
-
-/* .menu__entete .menu .menu-item::before {
-  content: "-";
-  background: rgb(151, 196, 141);
-  border-radius: 0.5rem;
-  padding-inline: 0.3rem;
-  margin-inline-end: 0.3rem;
-} */
-
-.site_footer_logo {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 2em;
-}
-
 
 #menu-footer2.menu {
   display: flex;
@@ -570,7 +616,8 @@ pre {
 }
 
 .site__footer section {
-
+  display: flex;
+  justify-content: space-around;
   width: 100vw;
 }
 
@@ -580,30 +627,37 @@ pre {
   align-items: center;
 }
 
+#menu-footer2.menu {
+  display: flex;
+  width: auto;
+}
 
-.recherche{
+#menu-footer2.menu li {
+  margin: 1em;
+}
+
+
+.recherche {
   margin: 1.5rem;
 }
 
-.menu__recherche{
+.menu__recherche {
   display: flex;
 }
- @media screen and ( max-width: 1300px) {
-  .menu__recherche{
-    display:flex;
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-  }
- @media screen and ( max-width: 1000px) {
-  .menu__entete .menu{
+
+
+
+@media screen and (max-width: 1000px) {
+  .menu__entete .menu {
     display: block;
+
   }
 
-  #menu-footer2.menu{
+  #menu-footer2.menu {
     display: block;
   }
-  }
+}
+
 /* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
