@@ -13,7 +13,7 @@
             if(in_category('cours')){
                 $menu = "cours";
             }
-        
+            //menu peut prendre les valeurs : "4w4", "cours" 
             echo $menu;
             wp_nav_menu(array(
                 "menu" => $menu,
