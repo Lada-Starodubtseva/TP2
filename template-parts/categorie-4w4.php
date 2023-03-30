@@ -7,14 +7,13 @@
 $titre = get_the_title();
 $sigle = substr($titre, 0, 7);
 $titre_long = substr($titre, 7,  -5);
-$durree = "90";
+
 
  $titre = get_the_title();
  //challenge -> enlever le '0' des titres de s articles
-if (substr($titre,0,1)=='0'){
-$titre = ltrim($titre, '0');
-}else{
-  $titre = '0';
+ if (substr($titre,0,1)=='0')
+{
+  $titre = substr($titre,1);
 }
 ?>
 

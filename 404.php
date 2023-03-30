@@ -3,11 +3,23 @@
  * Modèle par défaut
  * 
  */
+$image = "foret-conifer.jpg";
+is_front_page();
 ?>
 <?php get_header(); ?>
-<main class="site__main">
-<h3>404.php</h3>
-<h1>Page non disponible</h1>
-</main>
+<body class="site no-aside">
+    
 
-<?php get_footer(); ?>
+   <section class="site__main__404__body">
+
+    <main class="site__main__404">
+
+            <h1>404.php</h1>
+            <h2>Page non disponible</h2>
+
+
+ 
+    </main>
+   </section>
+    </body>
+ <?php get_footer(); ?>

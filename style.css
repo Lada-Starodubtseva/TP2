@@ -205,18 +205,19 @@ div.search-burger {
 
 @media screen and (max-width:1300px) {
 
-    .menu__recherche label#burger {
-      display: block;
+  .menu__recherche label#burger {
+    display: block;
 
-    }
-    .menu__recherche {
-      display: flex;
-      flex-direction: row-reverse;
-    }
+  }
 
-    .menu__entete{
-      transform: translateY(-32vh);
-    }
+  .menu__recherche {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .menu__entete {
+    transform: translateY(-32vh);
+  }
 
 }
 
@@ -228,6 +229,7 @@ input#chkBurger:checked~nav.menu__entete {
   transform: translateY(0.5vh);
   transition: 0.5s;
 }
+
 input#chkBurger:not(:checked)~nav.menu__entete {
 
   transition: 0.5s;
@@ -740,3 +742,6 @@ mise en page générale avec display:grid
     grid-template-areas: "header""main""footer";
   }
 }
+
+
+

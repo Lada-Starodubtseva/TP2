@@ -9,7 +9,7 @@
  $titre = get_the_title();
  $sigle = substr($titre, 0, 7);
  $titre_long = substr($titre, 7,  -5);
- $durree = "90";
+ $durree = substr($titre, strpos($titre,'('));
 ?>
 
   <article class="blockflex__article">
