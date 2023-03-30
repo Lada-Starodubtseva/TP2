@@ -19,6 +19,7 @@ is_front_page();
             
             <p>Page introuvable, Vous pouvez tenter une recherche!</p>
 
+            <?= get_search_form() ?>
 
  
     </main>

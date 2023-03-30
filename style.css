@@ -743,5 +743,40 @@ mise en page générale avec display:grid
   }
 }
 
+h1 {
+  display: block;
+  text-align: center;
+}
+
+.site__main__404__body {
+  background: url('.../foret-conifer.jpg');
+
+}
+
+
+.site__main__404 {
+
+  background-color: rgba(223, 255, 228, 0.351);
+  color: white;
+  margin: 0;
+  margin-top: 0px;
+  margin-top: 0px;
+  padding: 0;
+  margin-top: -4vh;
+}
+
+.site__main__404 h1 {
+  padding-top: 5vh;
+  font-size: 50px;
+  color: white;
+}
+
+
+.site__main__404 .recherche {
+  margin: 1.5rem;
+  justify-content: center;
+  display: flex;
+}
+
 
 
