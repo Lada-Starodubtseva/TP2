@@ -16,6 +16,8 @@ is_front_page();
 
             <h1>404.php</h1>
             <h2>Page non disponible</h2>
+            
+            <p>Page introuvable, Vous pouvez tenter une recherche!</p>
 
 
  
