@@ -21,6 +21,13 @@ is_front_page();
 
             <?= get_search_form() ?>
 
+            <nav class="menu-notes-404">
+            <h2>Les notes de cours</h2>
+            <?php wp_nav_menu(array(
+                            "menu" => "notes",
+                            "container" => "nav",
+                            "container_class" => "menu__main",
+                    )); ?>
  
     </main>
    </section>

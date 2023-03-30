@@ -778,5 +778,26 @@ h1 {
   display: flex;
 }
 
+.menu-notes-404 {
+  display: block;
+}
 
+.menu-notes-404 h2{
+  font-size: 30px;
+}
+
+.menu-notes-404 nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-notes-404 nav ul li {
+  padding: 1vw;
+}
+.menu-notes-404 nav ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
 
