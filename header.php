@@ -11,7 +11,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="site <?php echo(is_front_page() || is_404() ? "no-aside": "") ?> ">
+<body class= "custom-background site" site <?php echo(is_front_page() || is_404() ? "no-aside": "") ?> ">
     <header class="site__entete">
 
 

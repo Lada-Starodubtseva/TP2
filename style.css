@@ -561,6 +561,7 @@ pre {
   justify-content: space-between;
 }
 
+
 .footer1 h5 {
   display: block;
   text-align: center;
@@ -638,6 +639,18 @@ pre {
   margin: 1em;
 }
 
+.footer3 ul#menu-porteouv{
+display: flex;
+}
+.footer3 ul li{
+  margin: 1em;
+}
+
+.footer3 h5{
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
 
 .recherche {
   margin: 1.5rem;

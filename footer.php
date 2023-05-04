@@ -16,8 +16,6 @@
         )); ?>
     </nav>
 
-
-
     <nav class="footer2">
       <h5>Nos réseaux sociaux</h5>
       <?php wp_nav_menu(array(
@@ -27,6 +25,14 @@
         )); ?>
     </nav>
 
+  </section>
+
+
+
+  <section class="site_footer_logo">
+   
+
+
     <nav class="footer3">
       <h5>Evenements</h5>
       <?php wp_nav_menu(array(
@@ -35,15 +41,6 @@
                             "container_class" => "menu__footer",
         )); ?>
     </nav>
-
-
-
-    <nav>
-      <div class="sidebar ">
-        <?php dynamic_sidebar( 'footer3' ); ?>
-      </div>
-    </nav>
-  </section>
 
 
 </footer>
