@@ -17,9 +17,8 @@
 
 #### Références
 - https://eddytuto.ca/
-- http://localhost/bd-wordpress-4w4/wordpress/wp-admin/
+- https://github.com/Lada-Starodubtseva/TP2
 
 - Lien GitHub : https://github.com/Lada-Starodubtseva
 - Lien SiteGround : https://cidweb41.sg-host.com/
-
 
