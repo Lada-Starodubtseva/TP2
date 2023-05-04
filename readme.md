@@ -1,13 +1,18 @@
-# Intra
+# TP2
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Lada Starodubtseva
 #### Description
-- Ajout de la page 404
 
+- Amélioration de la page d'accueil interactive utiliser le modèle « front-page.php »
+- Dynamisation de la structure de menu mobile actuel
+- Amélioration de la structure de sidebar
+- Amélioration de l'apparence du footer
+- Amélioration le modèle category-cours pour synthétiser l'offre de cours
+- Création quelques modèles et templates
 
-
-
--	Ajout de la page 404 qui permet d'acceder a des articles dans le cas d'une erreur de recherche
+- Amélioration de l'extension carrousel
+- Utilisation des images « **mise-en-avant** » et la fonction 
+- Amélioration globale du site web 
 
 
 #### Références
@@ -16,6 +21,8 @@
 
 - Lien GitHub : https://github.com/Lada-Starodubtseva
 - Lien SiteGround : https://cidweb41.sg-host.com/
+# TP2
+# TP2
 # TP2
 # TP2
 # TP2
