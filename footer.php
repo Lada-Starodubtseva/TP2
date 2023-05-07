@@ -29,7 +29,7 @@
 
 
 
-  <section class="site_footer_logo">
+  <section class="site_footer_evenements">
    
 
 
@@ -41,6 +41,8 @@
                             "container_class" => "menu__footer",
         )); ?>
     </nav>
+
+  </section>
 
 
 </footer>

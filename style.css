@@ -4,7 +4,7 @@
 Theme Name: 2023 4w4 ada Starodubtseva
 Theme URI: https://referenced.ca
 Author: Lada starodubtseva
-Author URI: https://github.com/LadaStarodubtseva
+Author URI: https://github.com/eddytuto
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
@@ -455,11 +455,11 @@ h6 {
 }
 
 p {
-  /*
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;*/
-  font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
   text-align: center;
+  font-size: 14px;
+  color: beige;
+}
 }
 
 ul,
@@ -491,6 +491,7 @@ ol {
 ul li,
 ol li {
   margin: 0.5rem 0rem;
+  list-style-type: none;
 }
 
 
@@ -624,6 +625,10 @@ pre {
   width: 100vw;
 }
 
+.site_footer_evenements{
+  justify-content: space-around;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-between;
@@ -640,6 +645,8 @@ pre {
 }
 
 .footer3 ul#menu-porteouv{
+text-align: center;
+
 display: flex;
 }
 .footer3 ul li{
@@ -757,8 +764,9 @@ mise en page générale avec display:grid
 }
 
 h1 {
-  display: block;
-  text-align: center;
+display: block;
+text-align: center;
+color: white;
 }
 
 .site__main__404__body {
