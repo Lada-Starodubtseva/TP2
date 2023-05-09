@@ -97,39 +97,39 @@
       carrousel__form.children[ancien_index].checked = false;
     }
 
-    redimensionner_carrousel();
+    // redimensionner_carrousel();
     carrousel__figure.children[index].classList.add('carrousel__img--activer');
-    carrousel__figure.children[index].checked = true;
+    carrousel__form.children[index].checked = true;
     ancien_index = index
 
   }
 
-  function redimensionner_carrousel(){
-    // recuperer les dimentions de l'image courante
-    const imageWidth = carrousel__figure.children[index].naturalWidth;
-    const imageHeight = carrousel__figure.children[index].naturalHeight;
+  // function redimensionner_carrousel(){
+  //   // recuperer les dimentions de l'image courante
+  //   const imageWidth = carrousel__figure.children[index].naturalWidth;
+  //   const imageHeight = carrousel__figure.children[index].naturalHeight;
 
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
+  //   const windowWidth = window.innerWidth;
+  //   const windowHeight = window.innerHeight;
 
-    let carrouselWidth = windowWidth;
-    if (windowWidth > 1000){
+  //   let carrouselWidth = windowWidth;
+  //   if (windowWidth > 1000){
 
-      carrouselWidth = windowWidth - windowWidth/2
+  //     carrouselWidth = windowWidth - windowWidth/2
 
 
-    }
+  //   }
 
-    let carrouselHeight = carrouselWidth * imageHeight/imageWidth;
+  //   let carrouselHeight = carrouselWidth * imageHeight/imageWidth;
 
-    carrousel.style.width = `${carrouselWidth}px`;
-    carrousel.style.height = `${carrouselHeight}px`;
-    carrousel.style.top = 0
-    carrousel.style.left = `${(windowWidth - carrouselWidth)/2}`
-    carrousel.style.left = `${(windowHeight - carrouselHeight)/2}`
+  //   carrousel.style.width = `${carrouselWidth}px`;
+  //   carrousel.style.height = `${carrouselHeight}px`;
+  //   carrousel.style.top = 0
+  //   carrousel.style.left = `${(windowWidth - carrouselWidth)/2}`
+  //   carrousel.style.left = `${(windowHeight - carrouselHeight)/2}`
 
-    //console.log(windowWidth, windowHeight  = " width , height")
-  }
+  //   //console.log(windowWidth, windowHeight  = " width , height")
+  // }
 
 
 
