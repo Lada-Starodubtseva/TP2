@@ -41,8 +41,19 @@
 
         </section>
         <?= get_search_form() ?>
+        <div class="menu__evenements">
+         <p>Évenements</p>
+         <?php wp_nav_menu(array(
+            
+                        "menu" => "Evenements",
+                        "container" => "nav",
+                        "container_class" => "menu__evenements",
+                )); ?>
+
+        </div>
         <h1> <a class="site_titre" href="<?= bloginfo('url'); ?>"> <?= bloginfo('name'); ?></a> </h1>
         <h2 class="site__description"><?= bloginfo('description'); ?> </h2>
+
     </header>
 
 

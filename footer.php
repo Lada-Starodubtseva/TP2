@@ -29,21 +29,6 @@
 
 
 
-  <section class="site_footer_evenements">
-   
-
-
-    <nav class="footer3">
-      <h5>Evenements</h5>
-      <?php wp_nav_menu(array(
-                            "menu" => "PorteOuv",
-                            "container" => "nav",
-                            "container_class" => "menu__footer",
-        )); ?>
-    </nav>
-
-  </section>
-
 
 </footer>
 

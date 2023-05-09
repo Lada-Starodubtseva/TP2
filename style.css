@@ -455,7 +455,7 @@ h6 {
 }
 
 p {
-    font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 14px;
   color: beige;
@@ -625,7 +625,7 @@ pre {
   width: 100vw;
 }
 
-.site_footer_evenements{
+.site_footer_evenements {
   justify-content: space-around;
 }
 
@@ -644,16 +644,17 @@ pre {
   margin: 1em;
 }
 
-.footer3 ul#menu-porteouv{
-text-align: center;
+.footer3 ul#menu-porteouv {
+  text-align: center;
 
-display: flex;
+  display: flex;
 }
-.footer3 ul li{
+
+.footer3 ul li {
   margin: 1em;
 }
 
-.footer3 h5{
+.footer3 h5 {
   color: white;
   font-family: cursive;
   text-align: center;
@@ -677,6 +678,20 @@ display: flex;
 
   #menu-footer2.menu {
     display: block;
+  }
+
+  div.menu__evenements{
+    display: block;
+  }
+}
+@media screen and (min-width: 1001px) {
+ 
+
+  div.menu__evenements nav ul{
+    display: flex;
+  }
+  div.menu__evenements nav ul li{
+    margin: 10px;
   }
 }
 
@@ -764,9 +779,9 @@ mise en page générale avec display:grid
 }
 
 h1 {
-display: block;
-text-align: center;
-color: white;
+  display: block;
+  text-align: center;
+  color: white;
 }
 
 .site__main__404__body {
@@ -803,7 +818,7 @@ color: white;
   display: block;
 }
 
-.menu-notes-404 h2{
+.menu-notes-404 h2 {
   font-size: 30px;
 }
 
@@ -816,9 +831,33 @@ color: white;
 .menu-notes-404 nav ul li {
   padding: 1vw;
 }
+
 .menu-notes-404 nav ul li a {
   color: white;
   font-weight: bold;
   font-size: 20px;
 }
+
+
+
+div.menu__evenements {
+  text-align: start;
+  font-size: 16px;
+  font-family: cursive; 
+   background-color: #0115004d;
+  border-radius: 15px;
+  padding: 2%;
+  width: fit-content;
+}
+div.menu__evenements p {
+  text-align: start;
+  font-size: 20px;
+  font-family: cursive;
+  margin: 1rem 0.5rem;
+  padding: 0 15px;
+
+
+}
+
+
 
