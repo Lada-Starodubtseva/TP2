@@ -458,9 +458,9 @@ p {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 14px;
-  color: beige;
+  color: #283804;
 }
-}
+
 
 ul,
 ol {
@@ -492,6 +492,7 @@ ul li,
 ol li {
   margin: 0.5rem 0rem;
   list-style-type: none;
+  font-family: cursive;
 }
 
 
@@ -680,17 +681,25 @@ pre {
     display: block;
   }
 
-  div.menu__evenements{
-    display: block;
-  }
-}
-@media screen and (min-width: 1001px) {
- 
 
-  div.menu__evenements nav ul{
+  div.menu__evenements ul {
     display: flex;
+    justify-content: space-evenly;
+    width: min-content;
   }
-  div.menu__evenements nav ul li{
+
+}
+
+@media screen and (min-width: 1001px) {
+
+
+  div.menu__evenements nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: min-content;
+  }
+
+  div.menu__evenements nav ul li {
     margin: 10px;
   }
 }
@@ -740,6 +749,8 @@ mise en page générale avec display:grid
   border-radius: 15px;
   margin: 2em;
   text-align: center;
+  font-family: surcive;
+  color: white;
 
 }
 
@@ -843,12 +854,15 @@ h1 {
 div.menu__evenements {
   text-align: start;
   font-size: 16px;
-  font-family: cursive; 
-   background-color: #0115004d;
+  font-family: cursive;
+  background-color: #0115004d;
   border-radius: 15px;
   padding: 2%;
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 div.menu__evenements p {
   text-align: start;
   font-size: 20px;
@@ -858,6 +872,3 @@ div.menu__evenements p {
 
 
 }
-
-
-
